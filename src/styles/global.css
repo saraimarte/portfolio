@@ -23,11 +23,15 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
+    gap:
 }
 
 img{
     border:5px solid blue;
     width:287px;
     height: 120px;
+}
+
+h3{
+    border:5px solid pink;
 }
