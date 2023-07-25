@@ -1,5 +1,5 @@
 ---
-import logo from '../assets/Logo.svg';
+import logo from '../assets/logo.png';
 ---
 
 <html lang="en">
@@ -13,8 +13,11 @@ import logo from '../assets/Logo.svg';
 	</head>
 	<body>
 		<div class = "container"> 
-			<h3>hi, i'm</h3>
-			<img src  = {logo}> 
+			<div class = "message">
+				<h3>hi, i'm</h3>
+				<img src  = {logo}> 
+			</div>
+			
 		</div>
 	</body>
 	<style>
@@ -26,6 +29,12 @@ import logo from '../assets/Logo.svg';
 			align-items:center;
 			height:100%;
 			width:100%;
+		}
+		.message{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
 
 		}
 		
