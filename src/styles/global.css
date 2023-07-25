@@ -4,6 +4,7 @@ body{
     padding:0;
     height:100vh;
     background-color:#E5E7EA;
+    overflow:hidden;
 }
 
 .container{
