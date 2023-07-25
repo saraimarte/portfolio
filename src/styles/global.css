@@ -3,9 +3,12 @@ body{
     margin:0;
     padding:0;
     height:100vh;
+    border:5px solid black;
+
 }
 
 .container{
+    border:5px solid green;
     background-color:#E5E7EA;
     display:flex;
     flex-direction:column;
@@ -15,6 +18,7 @@ body{
     width:100%;
 }
 .message{
+    border:5px solid black;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -23,6 +27,7 @@ body{
 }
 
 img{
+    border:5px solid blue;
     width:287px;
     height: 120px;
 }
