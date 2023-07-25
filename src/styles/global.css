@@ -33,6 +33,9 @@ body{
 #menu{
     width:29px;
     height:27px;
+    position: fixed;
+    top:0;
+    left:100%;
 }
 
 #h31{
