@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 730.29 212.6">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: OwnersWide-Light, 'Owners Wide';
+        font-size: 200px;
+        font-weight: 300;
+      }
+
+      .cls-2 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(5.55 168.4)"><tspan class="cls-3" x="0" y="0">c</tspan><tspan x="115.2" y="0">o</tspan><tspan class="cls-2" x="232.4" y="0">n</tspan><tspan class="cls-4" x="337.2" y="0">t</tspan><tspan x="422" y="0">a</tspan><tspan class="cls-5" x="527.4" y="0">c</tspan><tspan x="633.2" y="0">t</tspan></text>
+  </g>
+</svg>
