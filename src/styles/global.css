@@ -28,5 +28,6 @@ body{
 
 img{
     border:5px solid blue;
-
+    width:287px;
+    height: 120px;
 }
