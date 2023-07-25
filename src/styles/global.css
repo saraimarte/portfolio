@@ -32,7 +32,11 @@ h3{
 
 }
 #menu{
-
+    width:29px;
+    height:27px;
+    position: fixed;
+    top:10px;
+    left:80%;
 }
 
 #h31{
