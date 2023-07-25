@@ -23,7 +23,6 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:
 }
 
 img{
@@ -34,4 +33,15 @@ img{
 
 h3{
     border:5px solid pink;
+}
+
+#h31{
+    position: relative;
+    top:40px;
+}
+
+
+#h32{
+    position: relative;
+    bottom:40px;
 }
