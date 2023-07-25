@@ -4,3 +4,25 @@ body{
     padding:0;
     height:100vh;
 }
+
+.container{
+    background-color:#E5E7EA;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+}
+.message{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+img{
+    width:287px;
+    height: 120px;
+}
