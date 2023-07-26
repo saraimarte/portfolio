@@ -65,6 +65,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:32px;
 }
 #work{
     width:182.31px;
