@@ -21,7 +21,7 @@ import contact from '../assets/contact.png';
 	</head>
 	<body>
 		<div class = "container"> 
-			<img id = "menu" src  = {Menu}> 
+			<img x-on:click = "show!=show" id = "menu" src  = {Menu}> 
 			<div class = "message">
 				<h3 id = "h31">hi, i'm</h3>
 				<img id = "logo" src  = {logo}> 
@@ -29,7 +29,7 @@ import contact from '../assets/contact.png';
 			</div>	
 		</div>
 		<div class = "nav" x-data = "{show:false}">
-			<nav x-on:click = "show!=show" x-show = "show" @click.outside = "show = falsee">
+			<nav x-show = "show" @click.outside = "show = false">
 				<a href = "" >
 					<img id = "work" src = {work}>
 				</a>
