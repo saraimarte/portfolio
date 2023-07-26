@@ -5,6 +5,8 @@ import '../styles/global.css';
 import work from '../assets/work.png';
 import blogs from '../assets/blogs.png';
 import contact from '../assets/contact.png';
+import Navigation from '../components/Navigation.astro';
+
 ---
 
 <html lang="en">
@@ -27,19 +29,7 @@ import contact from '../assets/contact.png';
 				<img id = "logo" src  = {logo}> 
 				<h3 id = "h32">a developer & designer</h3>
 			</div>	
-			<div class = "nav" x-show = "open" @click.outside = "open=false">
-				<nav>
-					<a href = "/work" >
-						<img id = "work" src = {work}>
-					</a>
-					<a href = "/blogs" > 
-						<img id = "blogs" src = {blogs} > 
-					</a>
-					<a href = "/contact">
-						<img id = "contact" src = {contact} >
-					</a>
-				</nav>
-			</div>
+			<Navigation />
 		</div>
 		
 	
