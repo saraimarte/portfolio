@@ -27,25 +27,20 @@ import contact from '../assets/contact.png';
 				<img id = "logo" src  = {logo}> 
 				<h3 id = "h32">a developer & designer</h3>
 			</div>	
-
-				
-	<div class = "nav" x-data = "{show:false}">
-		<nav x-on:click = "show!=show" x-show = "show" @click.outside = "show = falsee">
-			<a href = "" >
-				<img id = "work" src = {work}>
-			</a>
-			<a href = "" > 
-				<img id = "blogs" src = {blogs} > 
-			</a>
-			<a href = "">
-				<img id = "contact" src = {contact} >
-			</a>
-		</nav>
-	</div>
-			
-			
 		</div>
-
+		<div class = "nav" x-data = "{show:false}">
+			<nav x-on:click = "show!=show" x-show = "show" @click.outside = "show = falsee">
+				<a href = "" >
+					<img id = "work" src = {work}>
+				</a>
+				<a href = "" > 
+					<img id = "blogs" src = {blogs} > 
+				</a>
+				<a href = "">
+					<img id = "contact" src = {contact} >
+				</a>
+			</nav>
+		</div>
 	
 	</body>
 
