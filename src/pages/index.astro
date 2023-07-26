@@ -21,15 +21,15 @@ import contact from '../assets/contact.png';
 	</head>
 	<body>
 		<div class = "container"> 
-			<img x-on:click = "show!=show" id = "menu" src  = {Menu}> 
+			<img x-on:click = "open=!open" id = "menu" src  = {Menu}> 
 			<div class = "message">
 				<h3 id = "h31">hi, i'm</h3>
 				<img id = "logo" src  = {logo}> 
 				<h3 id = "h32">a developer & designer</h3>
 			</div>	
 		</div>
-		<div class = "nav" x-data = "{show:false}">
-			<nav x-show = "show" @click.outside = "show = false">
+		<div class = "nav" x-data = "{open:false}">
+			<nav x-show = "open" @click.outside = "open=false">
 				<a href = "" >
 					<img id = "work" src = {work}>
 				</a>
