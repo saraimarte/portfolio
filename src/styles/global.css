@@ -57,9 +57,12 @@ h3{
     display:flex;
     justify-content: center;
     align-items: center;
+    height:100%;
+
 }
 
 nav{
+    height:100%;
     border:5px solid green;
     display:flex;
     flex-direction: column;
