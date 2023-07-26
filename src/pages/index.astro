@@ -28,8 +28,8 @@ import contact from '../assets/contact.png';
 				<h3 id = "h32">a developer & designer</h3>
 			</div>	
 		</div>
-		<div class = "nav" x-data = "{open:false}">
-			<nav x-show = "open" @click.outside = "open=false">
+		<div class = "nav" x-data = "{open:false}" x-show = "open">
+			<nav  @click.outside = "open=false">
 				<a href = "" >
 					<img id = "work" src = {work}>
 				</a>
