@@ -1,11 +1,16 @@
 ---
 import logo from '../assets/logo.png';
+import work from '../assets/work.png';
+import blogs from '../assets/blogs.png';
+import contact from '../assets/contact.png';
+
 import Menu from '../assets/Menu.png';
 import '../styles/global.css';
 ---
 
 <html lang="en">
 	<head>
+		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -22,8 +27,16 @@ import '../styles/global.css';
 				<h3 id = "h31">hi, i'm</h3>
 				<img id = "logo" src  = {logo}> 
 				<h3 id = "h32">a developer & designer</h3>
-			</div>
-			
+			</div>	
+		</div>
+
+		<div class = "nav">
+			<nav>
+				<img src = {work}>
+				<img src = {blogs} >
+				<img src = {contact} >
+
+			</nav>
 		</div>
 	</body>
 
