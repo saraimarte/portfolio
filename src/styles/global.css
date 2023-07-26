@@ -51,3 +51,7 @@ h3{
     position: relative;
     bottom:28px;
 }
+
+.nav, nav{
+    border:5px solid black;
+}
