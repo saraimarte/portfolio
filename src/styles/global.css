@@ -39,6 +39,7 @@ h3{
     position: fixed;
     top:39px;
     left:85%;
+    z-index:5;
 }
 
 #h31{
@@ -53,6 +54,7 @@ h3{
 }
 
 .nav{
+    z-index:2;
     border:5px solid black;
     display:flex;
     justify-content: center;
