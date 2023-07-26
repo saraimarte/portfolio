@@ -2,37 +2,7 @@
 import Menu from '../assets/Menu.png';
 import logo from '../assets/logo.png';
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class = "container" x-data = "{open:false}"> 
-			<img x-on:click = "open=!open" id = "menu" src  = {Menu}> 
-			<div class = "message">
-				<h3 id = "h31">hi, i'm</h3>
-				<img id = "logo" src  = {logo}> 
-				<h3 id = "h32">a developer & designer</h3>
-				<h3> HELLOO</h3>
-				<a href = "/"> HOME </a>
-			</div>	
-			<Navigation />
-		
-
-		</div>
-		
-	</body>
-
-</html>
+<MainLayout />
