@@ -6,13 +6,13 @@ import contact from '../assets/contact.png';
 
 <div class = "nav" x-show = "open" @click.outside = "open=false">
     <nav>
-        <a href = "/work" >
+        <a href = "../pages/work.astro" >
             <img id = "work" src = {work}>
         </a>
-        <a href = "/blogs" > 
+        <a href = "../pages/blogs.astro" > 
             <img id = "blogs" src = {blogs} > 
         </a>
-        <a href = "/contact">
+        <a href = "../pages/contact.astro">
             <img id = "contact" src = {contact} >
         </a>
     </nav>
