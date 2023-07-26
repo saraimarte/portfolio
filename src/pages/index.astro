@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import work from '../assets/work.png';
 import blogs from '../assets/blogs.png';
 import contact from '../assets/contact.png';
-
+import navigation from '../components/nav.astro';
 import Menu from '../assets/Menu.png';
 import '../styles/global.css';
 ---
@@ -28,23 +28,13 @@ import '../styles/global.css';
 				<img id = "logo" src  = {logo}> 
 				<h3 id = "h32">a developer & designer</h3>
 			</div>	
+			<navigation>
 			
-			<div class = "nav">
-				<nav>
-					<a href = "" >
-						<img id = "work" src = {work}>
-					</a>
-					<a href = "" > 
-						<img id = "blogs" src = {blogs} > 
-					</a>
-					<a href = "">
-						<img id = "contact" src = {contact} >
-					</a>
-				</nav>
-			</div>
+			</navigation>
+			
 		</div>
 
-		
+	
 	</body>
 
 </html>
