@@ -29,8 +29,8 @@ import contact from '../assets/contact.png';
 			</div>	
 
 				
-	<div class = "nav">
-		<nav>
+	<div class = "nav" x-data = "{show:false}">
+		<nav x-on:click = "show!=show" x-show = "show" @click.outside = "show = falsee">
 			<a href = "" >
 				<img id = "work" src = {work}>
 			</a>
