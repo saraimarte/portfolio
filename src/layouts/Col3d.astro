@@ -1,0 +1,32 @@
+---
+const images = await Astro.glob("/src/assets/3dImages/*").then(files => {return files.map(file => file.default)});
+---
+
+<div class = "column">
+    {
+    images.map(image => (
+      <img src = {image} />
+    ))
+    }
+
+
+</div>
+
+<style>
+
+    .column{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        gap:1em;
+        border:5px solid black;
+        
+    }
+    
+    img{
+        min-width:312px;
+        height:312px;
+        border-radius:30px;
+    }
+</style>
