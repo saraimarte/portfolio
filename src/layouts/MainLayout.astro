@@ -1,32 +1,22 @@
 ---
-const {pageTitle} = Astro.props;
+import MainHead from './MainHead.astro';
+
+//Import Components
 import Navigation from '../components/Navigation.astro';
+
+
+//Import Layouts
+import MainContainer from '../layouts/MainContainer.astro';
 
 ---
 
 <html lang="en">
-	<head>
-		<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
+    <MainHead pageTitle = "Sarai Marte" />
 	<body>
-		<div class = "container" x-data = "{open:false}"> 
-			<img x-on:click = "open=!open" id = "menu" src  = {Menu}> 
-			<div class = "message">
-				<h3 id = "h31">hi, i'm</h3>
-				<img id = "logo" src  = {logo}> 
-				<h3 id = "h32">a developer & designer</h3>
-			</div>	
-			<Navigation />
-		</div>
-		
+        <MainContainer>   
+            <slot></slot>	
+            <Navigation />
+        </MainContainer>
 	</body>
 
 </html>

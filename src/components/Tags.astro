@@ -1,0 +1,50 @@
+---
+import threedLogo from '../assets/3d.png';
+import brandingLogo from '../assets/branding.png';
+import websitesLogo from '../assets/websites.png';
+import programsLogo from '../assets/programs.png';
+
+
+---
+
+<div class = "tagContainer">
+     <div class = "tag" id = "3dTag"> 
+        <img src = {threedLogo}>
+     </div>
+     <div class = "tag" id = "brandingTag">
+        <img src = {brandingLogo}>
+
+     </div>
+     <div class = "tag" id = "websitesTag">
+        <img src = {websitesLogo}>
+
+     </div>
+     <div class = "tag" id = "programsTag">
+        <img src = {programsLogo}>
+
+     </div>
+
+</div>
+
+<style>
+    .tagContainer{
+        border:5px solid red;
+        display:flex;
+        flex-wrap:wrap;
+        max-width:318px;
+        gap: 10px;
+    }
+    .tag{
+        border-radius:30px;
+        width:91px;
+        height:40px;
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width:81px;
+        height:21px;
+    }
+</style>

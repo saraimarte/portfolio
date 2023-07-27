@@ -1,8 +1,18 @@
 ---
-import Menu from '../assets/Menu.png';
-import logo from '../assets/logo.png';
+
+//Import Styles
 import '../styles/global.css';
+
+
+//Import Components
+import MainMessage from '../components/MainMessage.astro';
+
+//Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
+
+
 ---
 
-<MainLayout />
+<MainLayout>
+	<MainMessage /> 
+</MainLayout>
