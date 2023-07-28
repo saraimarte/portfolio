@@ -6,25 +6,42 @@ import programsLogo from '../assets/programs.png';
 
 
 ---
-
-<div class = "tagContainer">
-     <div x-on:click = "open3d=!open3d" class = "tag" id = "3dTag"> 
-        <img src = {threedLogo}>
+    <div class = "tagContainer" x-data = "{activeTag:null}">
+    <!--Checks if activeTag is equal to 3d when its clicked on. If it is then it sets it equal to null if its not it sets it equal to 3d.
+    The bind determines that if and only if its equal to 3d it will toggle on the 'active' class
+    Only by clicking the 3d tag can the activeTag be equal to 3d. If its already equal to 3d it will turn it off and therefore also turn of the active class    
+    x-onlick = "question(?) ifTrue OR(:) ifFalse" Use (;) to seperate things you want to check for or do when element is clicked on.
+-->
+     <div
+        x-on:click = "open3d=!open3d; activeTag === '3d'? activeTag = null:activeTag = '3d'" 
+        x-bind:class = "{'active': activeTag === '3d'}"
+        class = "tag" id = "3dTag" > 
+       <img src = {threedLogo} />
      </div>
-     <div x-on:click = "openbranding=!openbranding" class = "tag" id = "brandingTag">
-        <img src = {brandingLogo}>
+
+     <div 
+        x-on:click = "openbranding=!openbranding; activeTag === 'branding'? activeTag = null:activeTag = 'branding'"
+        x-bind:class = "{'active': activeTag === 'branding'}"
+        class = "tag" id = "brandingTag">
+        <img src = {brandingLogo} />
+     </div>
+
+     <div 
+        x-on:click = "openWeb=!openWeb; activeTag === 'web'? activeTag = null:activeTag = 'web'"
+        x-bind:class = "{'active': activeTag === 'web'}"
+        class = "tag" id = "websitesTag">
+        <img  src = {websitesLogo} />
 
      </div>
-     <div x-on:click = "openWeb=!openWeb" class = "tag" id = "websitesTag">
-        <img  src = {websitesLogo}>
-
-     </div>
-     <div x-on:click = "openPrograms=!openPrograms" class = "tag" id = "programsTag">
-        <img src = {programsLogo}>
-
+     <div 
+        x-on:click = "openPrograms=!openPrograms; activeTag === 'program'? activeTag = null:activeTag = 'program'"
+        x-bind:class = "{'active': activeTag === 'program'}"
+        class = "tag" id = "programsTag">
+        <img src = {programsLogo} />
      </div>
 
 </div>
+
 
 <style>
     .tagContainer{
@@ -59,5 +76,10 @@ import programsLogo from '../assets/programs.png';
         bottom:2px;
     }
 
+    .tag.active {
+         background-color: #d3d3d3;
+    }
+
     
 </style>
+
