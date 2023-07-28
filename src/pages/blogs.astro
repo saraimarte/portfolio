@@ -19,9 +19,9 @@ import Column from '../layouts/Col3dandbranding.astro';
 <MainLayout>
 	<Column>
     <ul>
-    {blogs.map((blog) => 
+    {blogs.map((blog, index) => 
         <div class = "row"> 
-            <img src = {Icon1}/> 
+            {index % 2 === 0 ? <img src={Icon1} /> : <img src={Icon2} />}
             <li>
                 <a href={blog.url}>{blog.frontmatter.title}</a>
             </li>
