@@ -1,0 +1,38 @@
+---
+//Import Styles
+import '../styles/global.css';
+
+
+//Import Components
+
+//Import Assets
+import twitterIcon from '../assets/twitterIcon.png';
+import contact from '../assets/contact.png'
+import twitter from '../assets/twitter.png'
+import instagram from '../assets/instagram.png'
+
+//Import Layouts
+import MainLayout from '../layouts/MainLayout.astro';
+import Column from '../layouts/ColBlog.astro';
+
+---
+<MainLayout>
+  <img id = "con" src={contact}  />
+  <a href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
+  <a href = "https://instagram.com/smarte3d"> <img src = {instagram} /> </a> 
+ 
+</MainLayout>
+
+<style>
+    img{
+        width:250px;
+    }
+   
+    #con{
+        width:210px;
+
+    }
+ 
+
+
+</style>
