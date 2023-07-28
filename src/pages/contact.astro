@@ -18,8 +18,8 @@ import Column from '../layouts/ColBlog.astro';
 ---
 <MainLayout>
   <img id = "con" src={contact}  />
-  <a href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
-  <a href = "https://instagram.com/smarte3d"> <img src = {instagram} /> </a> 
+  <a class = "link" href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
+  <a class = "link" href = "https://instagram.com/smarte3d"> <img src = {instagram} /> </a> 
  
 </MainLayout>
 
@@ -34,5 +34,10 @@ import Column from '../layouts/ColBlog.astro';
     }
  
 
+	.link:hover{
+		position:relative;
+		bottom:2px;
+	}
+	
 
 </style>
