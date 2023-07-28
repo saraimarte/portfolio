@@ -1,6 +1,7 @@
 ---
 //Import Styles
 import '../styles/global.css';
+import 'animate.css';
 
 
 //Import Components
@@ -21,7 +22,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 ---
 
 <MainLayout pageTitle = "Sarai Marte">
-<div class = "container3" x-data="{open3d:false, openbranding:false, openWeb:false, openPrograms:false}"> 
+<div class = "container3" x-data="{open3d:true, openbranding:false, openWeb:false, openPrograms:false}"> 
 	<Tags/>
 	<Column1>
 			{
@@ -51,6 +52,7 @@ import Column4 from '../layouts/ColPrograms.astro';
         height:312px;
         border-radius:30px;
     }
+	
 	.container3{
 		display:flex;
 		flex-direction:column;
