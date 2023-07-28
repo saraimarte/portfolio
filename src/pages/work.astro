@@ -6,6 +6,7 @@ import '../styles/global.css';
 //Import Components
 import Tags from '../components/Tags.astro';
 const images = await Astro.glob("/src/assets/3dImages/*").then(files => {return files.map(file => file.default)});
+import threedLogo from '../assets/3d.png';
 
 
 //Import Layouts
@@ -15,15 +16,18 @@ import Column from '../layouts/Col3dandbranding.astro';
 ---
 
 <MainLayout pageTitle = "Sarai Marte">
-	<Tags />
+<div class = "workContainer" x-data="{open3d:false, openbranding:false}"> 
+	<Tags/>
 	<Column>
-		{
-		images.map(image => (
-			<img src = {image} />
-		))
-		}
-		
-	</Column>
+			{
+			images.map(image => (
+				<img src = {image} />
+			))
+			}
+	
+		</Column>
+	</div>
+
 </MainLayout>
 
 <style>
@@ -33,3 +37,11 @@ import Column from '../layouts/Col3dandbranding.astro';
         border-radius:30px;
     }
 </style>
+
+<!--div class = "3d" x-show="open3d" @click.outside = "open3d = false" > 
+			{
+			images.map(image => (
+				<img src = {image} />
+			))
+			}
+		</div> -->

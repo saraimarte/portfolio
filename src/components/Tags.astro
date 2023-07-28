@@ -9,10 +9,10 @@ import programsLogo from '../assets/programs.png';
 
 <div class = "tagContainer">
      <div class = "tag" id = "3dTag"> 
-        <img src = {threedLogo}>
+        <img x-on:click = "open3d=!open3d" src = {threedLogo}>
      </div>
      <div class = "tag" id = "brandingTag">
-        <img src = {brandingLogo}>
+        <img x-on:click = "openbranding=!openbranding" src = {brandingLogo}>
 
      </div>
      <div class = "tag" id = "websitesTag">
