@@ -4,7 +4,11 @@ import '../styles/global.css';
 
 
 //Import Components
-const blogs = await Astro.glob("/src/pages/posts/*").then(files => {return files.map(file => file.default)});
+const blogs = await Astro.glob('../pages/posts/*.md');
+
+//Import Assets
+import Icon1 from '../assets/Icon1.png';
+import Icon2 from '../assets/Icon2.png';
 
 //Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
@@ -13,5 +17,44 @@ import Column from '../layouts/Col3dandbranding.astro';
 ---
 
 <MainLayout>
-	<Column />
+	<Column>
+    <ul>
+    {blogs.map((blog) => 
+        <div class = "row"> 
+            <img src = {Icon1}/> 
+            <li>
+                <a href={blog.url}>{blog.frontmatter.title}</a>
+            </li>
+        </div>
+        )}
+ 
+    </ul>
+    </Column>
 <MainLayout/>
+
+<style>
+    .row{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:1em;
+    }
+
+    img{
+        width:25px;
+        height:23px;
+    }
+    a{
+        text-decoration:none;
+        font-size:16px;
+        font-family: 'Inter', sans-serif;
+
+    }
+    li{
+        list-style:none;
+        width:100%;
+        font-size:1em;
+        width:261px;
+
+    }
+</style>
