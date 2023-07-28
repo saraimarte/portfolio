@@ -5,14 +5,31 @@ import '../styles/global.css';
 
 //Import Components
 import Tags from '../components/Tags.astro';
+const images = await Astro.glob("/src/assets/3dImages/*").then(files => {return files.map(file => file.default)});
+
 
 //Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
-import Column from '../layouts/Col3d.astro';
+import Column from '../layouts/Col3dandbranding.astro';
 
 ---
 
 <MainLayout pageTitle = "Sarai Marte">
 	<Tags />
-	<Column />
+	<Column>
+		{
+		images.map(image => (
+			<img src = {image} />
+		))
+		}
+		
+	</Column>
 </MainLayout>
+
+<style>
+	img{
+        min-width:312px;
+        height:312px;
+        border-radius:30px;
+    }
+</style>

@@ -1,2 +1,17 @@
 ---
+//Import Styles
+import '../styles/global.css';
+
+
+//Import Components
+const blogs = await Astro.glob("/src/pages/posts/*").then(files => {return files.map(file => file.default)});
+
+//Import Layouts
+import MainLayout from '../layouts/MainLayout.astro';
+import Column from '../layouts/Col3dandbranding.astro';
+
 ---
+
+<MainLayout>
+	<Column />
+<MainLayout/>
