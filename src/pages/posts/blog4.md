@@ -10,4 +10,3 @@ tags: ["astro", "successes"]
 ---
 
 
-layout: ../../layouts/MarkdownPostLayout.astro

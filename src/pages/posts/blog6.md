@@ -9,5 +9,3 @@ pubDate: 2022-08-08
 tags: ["astro", "successes"]
 ---
 
-
-layout: ../../layouts/MarkdownPostLayout.astro
