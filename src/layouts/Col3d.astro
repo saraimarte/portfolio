@@ -1,7 +1,7 @@
 ---
 ---
 
-<div class = "column" x-show="open3d">
+<div class = "column" x-show="open3d"  @click.outside = "open3d=false">
     <slot/>
 </div>
 
@@ -14,7 +14,6 @@
         gap:1em;
        /* border:5px solid black;*/
         max-width:302px;
-        
     }
     
 

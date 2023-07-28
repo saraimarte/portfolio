@@ -1,0 +1,21 @@
+---
+---
+
+<div class = "column" x-show = "openWeb" @click.outside = "openWeb=false">
+    <slot/>
+</div>
+
+<style>
+    .column{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        gap:1em;
+       /* border:5px solid black;*/
+       max-width:302px;
+        
+    }
+    
+
+</style>

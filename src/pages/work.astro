@@ -21,7 +21,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 ---
 
 <MainLayout pageTitle = "Sarai Marte">
-<div class = "workContainer" x-data="{open3d:false, openbranding:false, openWeb:false, openPrograms:false}"> 
+<div class = "container3" x-data="{open3d:false, openbranding:false, openWeb:false, openPrograms:false}"> 
 	<Tags/>
 	<Column1>
 			{
@@ -51,6 +51,9 @@ import Column4 from '../layouts/ColPrograms.astro';
         height:312px;
         border-radius:30px;
     }
+	.container3{
+		border:5px solid red;
+	}
 </style>
 
 <!--div class = "3d" x-show="open3d" @click.outside = "open3d = false" > 
