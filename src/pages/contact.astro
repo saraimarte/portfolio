@@ -18,13 +18,21 @@ import Column from '../layouts/ColBlog.astro';
 
 ---
 <MainLayout>
- <HeaderLogo imageType = {contact} width = "148px" height = "43px"> </HeaderLogo>
-  <a class = "link" href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
+ <img id = "logo" src = {contact} />
+
+<a class = "link" href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
   <a class = "link" href = "https://instagram.com/smarte3d"> <img src = {instagram} /> </a> 
  
 </MainLayout>
 
 <style>
+    #logo{
+        width:148px;
+        height:43px;
+        position:absolute;
+		top:35px;
+		left:30%;
+    }
     img{
         width:150px;
     }
@@ -33,6 +41,41 @@ import Column from '../layouts/ColBlog.astro';
 		position:relative;
 		bottom:2px;
 	}
-	
+	a{
+        margin-right:10px;
+    }
 
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    #logo{
+        width:148px;
+        height:43px;
+        position:absolute;
+		top:35px;
+		left:40%;
+    }
+}
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        #logo{
+        width:148px;
+        height:43px;
+        position:absolute;
+		top:35px;
+		left:45%;
+    }
+    
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+        #logo{
+        width:148px;
+        height:43px;
+        position:absolute;
+		top:35px;
+		left:45.5%;
+    }
+    
+}
+}
 </style>

@@ -8,3 +8,61 @@ import Menu from '../components/Menu.astro';
     <img id = "logo" src  = {logo}> 
     <h3 id = "h32">a developer & designer</h3>
 </div>	
+
+<style>
+    
+.message{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    bottom:40px;
+}
+
+#logo{
+    width:346px;
+    height: 122px;
+}
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size:16px;
+
+}
+
+#h31{
+    position: relative;
+    top:40px;
+}
+
+
+#h32{
+    position: relative;
+    bottom:28px;
+}
+ /* Medium Devices, Desktops */
+ @media only screen and (min-width : 992px) {
+    #logo{
+        width:415.2px;
+        height: 146.4px;
+    }
+    h3{
+        font-family: 'Inter', sans-serif;
+        font-size:1.2em;
+
+    }
+
+    #h31{
+        position: relative;
+        top:40px;
+    }
+
+
+    #h32{
+        position: relative;
+        bottom:30px;
+    }
+
+
+    }
+</style>
