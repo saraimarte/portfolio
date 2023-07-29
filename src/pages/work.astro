@@ -10,7 +10,8 @@ const images = await Astro.glob("/src/assets/3dImages/*").then(files => {return 
 /*const brandingImages = await Astro.glob("/src/assets/brandingImages/*").then(files => {return files.map(file => file.default)});
 */
 import threedLogo from '../assets/3d.png';
-
+import work from '../assets/work.png';
+import HeaderLogo from '../components/HeaderLogo.astro';
 
 //Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
@@ -23,6 +24,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 
 <MainLayout pageTitle = "Sarai Marte">
 <div class = "container3" x-data="{open3d:true, openbranding:false, openWeb:false, openPrograms:false}"> 
+	<HeaderLogo imageType = {work} width = "96px" height = "41px"> </HeaderLogo>
 	<Tags/>
 	<Column1>
 			{
@@ -43,7 +45,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 	</Column4>
 
 	</div>
-
+	
 </MainLayout>
 
 <style>
@@ -58,6 +60,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 		flex-direction:column;
 		gap:1em;
 	}
+
 </style>
 
 <!--div class = "3d" x-show="open3d" @click.outside = "open3d = false" > 

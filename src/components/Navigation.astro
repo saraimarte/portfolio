@@ -9,16 +9,16 @@ import home from '../assets/home.png';
 <div class = "nav" x-show = "open" @click.outside = "open=false">
     <nav>
         <a href = "/" >
-            <img id = "home" src = {home}>
+            <img class = "navLink" id = "home" src = {home}>
         </a>
         <a href = "/work" >
-            <img id = "work" src = {work}>
+            <img class = "navLink" id = "work" src = {work}>
         </a>
         <a href = "/blogs" > 
-            <img id = "blogs" src = {blogs} > 
+            <img class = "navLink" id = "blogs" src = {blogs} > 
         </a>
         <a href = "/contact">
-            <img id = "contact" src = {contact} >
+            <img class = "navLink" id = "contact" src = {contact} >
         </a>
     </nav>
 </div>
@@ -63,5 +63,9 @@ nav{
 
 #home{ 
     width:270px;
+}
+.navLink:hover{
+    position:relative;
+    bottom:2px;
 }
 </style>

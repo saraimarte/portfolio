@@ -4,6 +4,7 @@ import '../styles/global.css';
 
 
 //Import Components
+import HeaderLogo from '../components/HeaderLogo.astro';
 
 //Import Assets
 import twitterIcon from '../assets/twitterIcon.png';
@@ -17,7 +18,7 @@ import Column from '../layouts/ColBlog.astro';
 
 ---
 <MainLayout>
-  <img id = "con" src={contact}  />
+ <HeaderLogo imageType = {contact} width = "148px" height = "43px"> </HeaderLogo>
   <a class = "link" href = "https://twitter.com/saraimartenj">  <img src = {twitter} />  </a>
   <a class = "link" href = "https://instagram.com/smarte3d"> <img src = {instagram} /> </a> 
  
@@ -25,15 +26,9 @@ import Column from '../layouts/ColBlog.astro';
 
 <style>
     img{
-        width:250px;
-    }
-   
-    #con{
-        width:210px;
-
+        width:150px;
     }
  
-
 	.link:hover{
 		position:relative;
 		bottom:2px;
