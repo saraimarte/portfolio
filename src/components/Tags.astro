@@ -1,10 +1,4 @@
 ---
-import threedLogo from '../assets/3d.png';
-import brandingLogo from '../assets/branding.png';
-import websitesLogo from '../assets/websites.png';
-import programsLogo from '../assets/programs.png';
-
-
 ---
     <div class = "tagContainer" x-data = "{activeTag:'3d'}">
     <!--Checks if activeTag is equal to 3d when its clicked on. If it is then it sets it equal to null if its not it sets it equal to 3d.
@@ -16,28 +10,29 @@ import programsLogo from '../assets/programs.png';
         x-on:click = "open3d=!open3d; activeTag === '3d'? activeTag = null:activeTag = '3d'" 
         x-bind:class = "{'active': activeTag === '3d'}"
         class = "tag" id = "3dTag" > 
-       <img src = {threedLogo} />
+       <h2 class = "fontUse"> 3d </h2>
      </div>
 
      <div 
         x-on:click = "openbranding=!openbranding; activeTag === 'branding'? activeTag = null:activeTag = 'branding'"
         x-bind:class = "{'active': activeTag === 'branding'}"
         class = "tag" id = "brandingTag">
-        <img src = {brandingLogo} />
+        <h2 class = "fontUse"> branding </h2>
+
      </div>
 
      <div 
         x-on:click = "openWeb=!openWeb; activeTag === 'web'? activeTag = null:activeTag = 'web'"
         x-bind:class = "{'active': activeTag === 'web'}"
         class = "tag" id = "websitesTag">
-        <img  src = {websitesLogo} />
+        <h2 class = "fontUse"> websites </h2>
 
      </div>
      <div 
         x-on:click = "openPrograms=!openPrograms; activeTag === 'program'? activeTag = null:activeTag = 'program'"
         x-bind:class = "{'active': activeTag === 'program'}"
         class = "tag" id = "programsTag">
-        <img src = {programsLogo} />
+        <h2 class = "fontUse"> tools </h2>
      </div>
 
 </div>

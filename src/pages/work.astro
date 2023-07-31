@@ -9,8 +9,6 @@ import Tags from '../components/Tags.astro';
 const images = await Astro.glob("/src/assets/3dImages/*").then(files => {return files.map(file => file.default)});
 /*const brandingImages = await Astro.glob("/src/assets/brandingImages/*").then(files => {return files.map(file => file.default)});
 */
-import threedLogo from '../assets/3d.png';
-import work from '../assets/work.png';
 import HeaderLogo from '../components/HeaderLogo.astro';
 
 //Import Layouts
@@ -24,7 +22,7 @@ import Column4 from '../layouts/ColPrograms.astro';
 
 <MainLayout pageTitle = "Sarai Marte">
 <div class = "container3" x-data="{open3d:true, openbranding:false, openWeb:false, openPrograms:false}"> 
-	<HeaderLogo imageType = {work} width = "96px" height = "41px"> </HeaderLogo>
+	<HeaderLogo text = "work"> </HeaderLogo>
 	<Tags/>
 	<Column1>
 			{

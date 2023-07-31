@@ -1,25 +1,12 @@
 ---
-import work from '../assets/work.png';
-import blogs from '../assets/blogs.png';
-import contact from '../assets/contact.png';
-import home from '../assets/home.png';
-
 ---
 
 <div class = "nav" x-show = "open" @click.outside = "open=false">
     <nav>
-        <a href = "/" >
-            <img class = "navLink" id = "home" src = {home}>
-        </a>
-        <a href = "/work" >
-            <img class = "navLink" id = "work" src = {work}>
-        </a>
-        <a href = "/blogs" > 
-            <img class = "navLink" id = "blogs" src = {blogs} > 
-        </a>
-        <a href = "/contact">
-            <img class = "navLink" id = "contact" src = {contact} >
-        </a>
+        <a href = "/" class = "navLink fontUse" id = "home"> home </a>
+        <a href = "/work"  class = "navLink fontUse" id = "work">work</a>
+        <a href = "/blogs"  class = "navLink fontUse" id = "blogs"  > blogs </a>
+        <a href = "/contact"  class = "navLink fontUse" id = "contact"> contact </a>
     </nav>
 </div>
 
@@ -49,23 +36,14 @@ nav{
     gap:32px;
 }
 
-#work{
-    width:182.31px;
-}
-
-#blogs{
-    width:185px;
-}
-
-#contact{
-    width:270.07px;
-}
-
-#home{ 
-    width:270px;
-}
 .navLink:hover{
     position:relative;
     bottom:2px;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+    font-size:5em;
 }
 </style>

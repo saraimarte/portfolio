@@ -1,13 +1,13 @@
 ---
-const {imageType, width, height} = Astro.props;
+const {text} = Astro.props;
+
 ---	
-<img id = "logo" src = {imageType} />
+<h1 class = "fontUse headerLogo"> {text} </h1>
 
-
-<style define:vars ={{width, height}}>
-    #logo{
-		width:var(--width);
-		height:var(--height);
+<style>
+    .headerLogo{
+        border:5px solid black;
+        font-size:3em;
 		position:absolute;
 		top:35px;
 		left:35%;
@@ -15,13 +15,12 @@ const {imageType, width, height} = Astro.props;
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
-        #logo{
-            width:var(--width);
-            height:var(--height);
-            position:absolute;
-            top:35px;
-            left:50%;
-        }
-    }
+    .headerLogo{
+        font-size:3em;
+		position:absolute;
+		top:35px;
+		left:50%;
+	}
+}
     
 </style>
