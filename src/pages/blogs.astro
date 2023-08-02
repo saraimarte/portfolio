@@ -2,7 +2,6 @@
 //Import Styles
 import '../styles/global.css';
 
-
 //Import Components
 const blogs = await Astro.glob('../pages/posts/blog1.md');
 import HeaderLogo from '../components/HeaderLogo.astro';
@@ -10,8 +9,6 @@ import HeaderLogo from '../components/HeaderLogo.astro';
 //Import Assets
 import Icon1 from '../assets/Icon1.png';
 import Icon2 from '../assets/Icon2.png';
-import brandingLogo from '../assets/branding.png';
-import blogLogo from '../assets/blogs.png';
 
 //Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
@@ -36,14 +33,14 @@ import Column from '../layouts/ColBlog.astro';
 <MainLayout/>
 
 <style>
-    
     .row{
         display:flex;
         justify-content:center;
         align-items:center;
         gap:1em;
         position:relative;
-        right:10px;
+        right:5%;
+
     }
   
     img{
@@ -68,6 +65,28 @@ import Column from '../layouts/ColBlog.astro';
 
     }
 
+    @media only screen and (min-width : 768px) {
+		.row{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:1em;
+            position:relative;
+            right:10%;
+	}
+}
+      /* Large Devices, Wide Screens */
+      @media only screen and (min-width : 1200px) {
+        	
+        .row{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:1em;
+            position:relative;
+            right:30%;
+	}
+    }
 
     
 </style>
