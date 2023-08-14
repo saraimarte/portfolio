@@ -34,7 +34,12 @@
         class = "tag" id = "programsTag">
         <h2 class = "fontUse"> tools </h2>
      </div>
-
+     <div 
+     x-on:click = "openCourses=!openCourses; activeTag === 'course'? activeTag = null:activeTag = 'course'"
+     x-bind:class = "{'active': activeTag === 'course'}"
+     class = "tag" id = "coursesTag">
+     <h2 class = "fontUse"> courses </h2>
+  </div>
 </div>
 
 

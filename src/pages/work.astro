@@ -17,11 +17,11 @@ import Column1 from '../layouts/Col3d.astro';
 import Column2 from '../layouts/Colbranding.astro';
 import Column3 from '../layouts/ColWebsites.astro';
 import Column4 from '../layouts/ColPrograms.astro';
-
+import Column5 from '../layouts/ColCourses.astro';
 ---
 
 <MainLayout pageTitle = "Sarai Marte">
-<div class = "container3" x-data="{open3d:true, openbranding:false, openWeb:false, openPrograms:false}"> 
+<div class = "container3" x-data="{open3d:true, openbranding:false, openWeb:false, openPrograms:false, openCourses:false, openCourses:false}"> 
 	<HeaderLogo text = "work"> </HeaderLogo>
 	<Tags/>
 	<Column1>
@@ -41,7 +41,9 @@ import Column4 from '../layouts/ColPrograms.astro';
 	<Column4>
 		Programs coming soon...
 	</Column4>
-
+	<Column5>
+		Courses coming soon...
+	</Column5>
 	</div>
 	
 </MainLayout>
