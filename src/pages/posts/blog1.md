@@ -1,5 +1,5 @@
 ---
-title: How to plot a normal distribution using matplotlib and numpy.
+title: Collection of Web Development Notes I Reference
 author: Astro Learner
 description: "This post will show up on its own!"
 image:
