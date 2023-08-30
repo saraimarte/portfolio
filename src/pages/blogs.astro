@@ -3,7 +3,7 @@
 import '../styles/global.css';
 
 //Import Components
-const blogs = await Astro.glob('../pages/posts/blog1.md');
+//const blogs = await Astro.glob('../pages/posts/*.astro');
 import HeaderLogo from '../components/HeaderLogo.astro';
 
 //Import Assets
@@ -13,18 +13,26 @@ import Icon2 from '../assets/Icon2.png';
 //Import Layouts
 import MainLayout from '../layouts/MainLayout.astro';
 import Column from '../layouts/ColBlog.astro';
+import title from '../pages/posts/blog1.astro'
+
+
+const blogs = await Astro.glob('../pages/posts/*.astro', {
+  format: 'mdx',
+  frontmatterFormat: 'yaml',
+});
 
 ---
 
 <MainLayout>
     <HeaderLogo text = "blogs"> </HeaderLogo>
 	<Column>
+        <h1> TEST {title} </h1>
     <ul>
     {blogs.map((blog, index) => 
         <div class = "row"> 
             {index % 2 === 0 ? <img src={Icon1} /> : <img src={Icon2} />}
             <li>
-                <a href={blog.url}>{blog.frontmatter.title}</a>
+                <a href={blog.url}> {blog.title} </a>
             </li>
         </div>
         )}
